@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/22-ea+11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.andreatt.ejercicio3jr_dein.controller.Controller">
+    <tabs>
+        <!-- Pestaña Productos -->
+        <Tab text="Productos">
+            <content>
+                <AnchorPane>
+                    <children>
+                        <Button fx:id="btnGenerarProductos" onAction="#handleGenerarProductos" text="Generar Informe" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <!-- Pestaña Secciones -->
+        <Tab text="Secciones">
+            <content>
+                <AnchorPane>
+                    <children>
+                        <Button fx:id="btnGenerarSecciones" onAction="#handleGenerarSecciones" text="Generar Informe" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <!-- Pestaña Tabla Producto -->
+        <Tab text="Tabla producto">
+            <content>
+                <AnchorPane>
+                    <children>
+                        <Button fx:id="btnGenerarTabla" onAction="#handleGenerarTabla" text="Generar Informe con Table" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <!-- Pestaña Gráficos -->
+        <Tab text="Graficos">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnGenerarGrafico" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleGenerarGrafico" text="Generar Informe Stock" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0" />
+               </children>
+            </AnchorPane>
+         </content>
+        </Tab>
+    </tabs>
+</TabPane>
